@@ -10,6 +10,7 @@ int main(void)
 {
 	unsigned long fib1 = 1, fib2 = 2, sum = 0;
 	float total_even;
+	int round;
 
 	while (sum < 4000000)
 	{
@@ -22,7 +23,9 @@ int main(void)
 		fib2 = sum;
 	}
 
-	printf("%.0f\n", total_even);
+	round = (int) (total_even < 0 ? total_even - 0.5 : total_even + 0.5);
+
+	printf("%d\n", round);
 
 	return (0);
 }
