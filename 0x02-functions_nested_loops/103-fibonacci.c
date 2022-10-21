@@ -22,7 +22,7 @@ int main(void)
 		fib2 = sum;
 	}
 
-	printf("%0f\n", total_even);
+	printf("%.0f\n", total_even);
 
 	return (0);
 }
