@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned long fib1 = 1, fib2 = 2, sum = 0;
+	unsigned long fib1 = 0, fib2 = 1, sum = 0;
 	float total_even;
 
 	while (sum < 4000000)
