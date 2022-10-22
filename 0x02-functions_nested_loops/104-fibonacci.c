@@ -15,7 +15,13 @@ int main(void)
 	{
 		sum = fib1 + fib2;
 
-		printf("%lu, ", sum);
+		printf("%lu", sum);
+		if (count < 98)
+		{
+			printf(", ");
+		}
+		if (count == 98)
+			break;
 
 		fib1 = fib2;
 		fib2 = sum;
