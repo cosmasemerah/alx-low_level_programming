@@ -12,12 +12,12 @@ void _puts(char *str)
 
 	for (count = 0; count >= 0; count++)
 	{
-		_putchar(str[count]);
-
 		if (str[count] == '\0')
 		{
 			_putchar('\n');
 			break;
 		}
+
+		_putchar(str[count]);
 	}
 }
