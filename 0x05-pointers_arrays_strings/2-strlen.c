@@ -4,18 +4,10 @@
 /**
   * _strlen - Returns the length of a string
   * Return: the lenght of @*s
-  * @*s: The string to be checked
+  * @s: The string to be checked
   */
 
 int _strlen(char *s)
 {
-	/*
-	int lenght;
-
-	lenght = strlen(s);
-
-	return (lenght);
-	*/
-
 	return (strlen(s));
 }
