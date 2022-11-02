@@ -9,17 +9,13 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int dlen = 0, slen = 0, count = 0;
+	int dlen = 0, count = 0;
 
 	while (*(dest + dlen) != '\0')
 	{
 		dlen++;
 	}
-	
-	while (*(src + slen) != '\0')
-		slen++;
 
-	/*
 	while (dlen >= 0)
 	{
 		*(dest + dlen) = *(src + count);
@@ -29,15 +25,6 @@ char *_strcat(char *dest, char *src)
 
 		count++;
 		dlen++;
-	}
-	*/
-
-	for (count = 0; count < slen; count++)
-	{
-		dest[dlen + count] = src[count];
-
-		if (src[count] == '\0')
-			break;
 	}
 
 	return (dest);
