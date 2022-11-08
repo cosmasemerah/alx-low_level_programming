@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-  * print_diagsums.c - prints the sum of two diagonals of a sqare
+  * print_diagsums - prints the sum of two diagonals of a sqare
   * matrix of integers
   * @a: array of integers
   * @size: size of array
