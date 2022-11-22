@@ -1,30 +1,26 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-int main() {
-  int n, i, *ptr, sum = 0;
+void SumOfElements(int* A)
+{
+	printf("%p\n", A);
+	
+	printf("%d\n", A[3]);
+	/**
+	for (i = 0; i < size; i++)
+	{
+		sum += A[i];
+	}
+	*/
 
-  printf("Enter number of elements: ");
-  scanf("%d", &n);
+	//return (sum);
+}
+int main(void)
+{
+	int A[] = {1,2,3,4,5};
 
-  ptr = (int*) malloc(n * sizeof(int));
- 
-  // if memory cannot be allocated
-  if(ptr == NULL) {
-    printf("Error! memory not allocated.");
-    exit(0);
-  }
+	SumOfElements(A);
 
-  printf("Enter elements: ");
-  for(i = 0; i < n; ++i) {
-    scanf("%d", ptr + i);
-    sum += *(ptr + i);
-  }
+	printf("%p\n", A);
 
-  printf("Sum = %d", sum);
-  
-  // deallocating the memory
-  free(ptr);
-
-  return 0;
+	return (0);
 }

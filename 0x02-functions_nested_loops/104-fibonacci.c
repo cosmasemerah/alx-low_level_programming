@@ -9,13 +9,13 @@
 int main(void)
 {
 	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	unsigned long long fib1 = 0, fib2 = 1, sum;
 
 	for (count = 1; count <= 98; count++)
 	{
 		sum = fib1 + fib2;
 
-		printf("%lu", sum);
+		printf("%.llu", sum);
 		if (count < 98)
 		{
 			printf(", ");
